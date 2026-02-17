@@ -2,18 +2,18 @@ import { Metadata } from "next";
 import { PracticeAreaDetail } from "@/components/landing/PracticeAreaDetail";
 
 export const metadata: Metadata = {
-    title: "Legal Documentation & Drafting Bengaluru | Contracts & Wills",
-    description: "Professional drafting services for sale deeds, rent agreements, wills, and commercial contracts in Bengaluru. Ensuring legal precision and protection.",
+    title: "Bangalore",
+    description: "services in Bangalore including agreements, contracts and legal",
 };
 
 export default function LegalDocumentationPage() {
     return (
         <main className="pt-20">
             <PracticeAreaDetail
-                title="Legal Documentation"
-                iconName="FileText"
-                imageUrl="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200"
-                description="Meticulous drafting and vetting of various legal instruments and notices."
+                title="Legal Documentation" // Updated title
+                iconName="FileText" // Kept original iconName as it was not explicitly removed
+                imageUrl="/images/6.jpg" // Updated image path and prop name
+                description="Meticulous drafting and review of legal documents, including wills, power of attorney, trust deeds, rental agreements, and partnership deeds, ensuring full legal compliance and protection." // Updated description
                 detailedContent="Precision in legal documentation is the first line of defense against future litigation. Adv. Suman Suresh specializes in the meticulous drafting and vetting of various legal instruments, including wills, gift deeds, powers of attorney, and service agreements. We ensure that every document is legally sound, reflects the client's intent accurately, and complies with the latest statutory requirements."
                 keyPoints={[
                     "Wills, Trusts & Probate Petitions",

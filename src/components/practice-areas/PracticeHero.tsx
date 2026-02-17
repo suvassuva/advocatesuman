@@ -30,7 +30,7 @@ export function PracticeHero() {
                         Comprehensive Legal Solutions
                     </span>
                     <h1 className="text-4xl md:text-7xl font-bold font-heading text-white mb-6 tracking-tight">
-                        Our Fields of <span className="text-primary italic">Expertise</span>
+                        Practice Areas - Advocate Suman Bangalore
                     </h1>
                     <div className="h-1.5 w-24 bg-primary mx-auto rounded-full mb-8 shadow-[0_0_20px_rgba(var(--primary),0.5)]" />
                     <p className="max-w-2xl mx-auto text-lg text-slate-300 leading-relaxed font-light">

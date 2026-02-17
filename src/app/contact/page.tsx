@@ -5,8 +5,8 @@ import { ContactCards } from "@/components/contact/ContactCards";
 import { MapSection } from "@/components/contact/MapSection";
 
 export const metadata: Metadata = {
-    title: "Contact Us | Schedule a Consultation in Bengaluru",
-    description: "Get in touch with Adv. Suman Suresh for professional legal advice and representation in Bengaluru. Office and home consultation options available.",
+    title: "Contact Advocate Suman - Bangalore",
+    description: "consultation and strategic guidance. Schedule your appointment",
 };
 
 export default function ContactPage() {

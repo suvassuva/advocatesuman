@@ -11,8 +11,8 @@ import { TrustBanner } from "@/components/landing/TrustBanner";
 import { GoogleReviews } from "@/components/landing/GoogleReviews";
 
 export const metadata: Metadata = {
-    title: "Adv. Suman Suresh | Professional Advocate & Legal Consultant in Bengaluru",
-    description: "Expert legal representation in Bengaluru. Specializing in Criminal Defense, Family Law, Civil Litigation, and Property Disputes. Compassionate, result-oriented advocacy by Adv. Suman Suresh.",
+    title: "Advocate Suman - Highly Experienced Lawyers Bangalore",
+    description: "providing trusted legal guidance and strong representation. Book",
 };
 
 export default function Home() {

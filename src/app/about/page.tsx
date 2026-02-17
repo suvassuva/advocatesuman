@@ -11,8 +11,8 @@ import { NotableAchievements } from "@/components/about/NotableAchievements";
 import { ReadyToDiscuss } from "@/components/about/ReadyToDiscuss";
 
 export const metadata: Metadata = {
-    title: "About Adv. Suman Suresh | Legal Expert in Bengaluru",
-    description: "Learn more about Adv. Suman Suresh, a dedicated legal professional in Bengaluru with expertise in handling complex civil, criminal, and family law matters.",
+    title: "About Advocate Suman - Highly Experienced Lawyer",
+    description: "Bangalore known for strategic legal guidance and trusted",
 };
 
 export default function AboutPage() {

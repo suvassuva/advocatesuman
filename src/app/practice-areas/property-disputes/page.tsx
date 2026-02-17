@@ -2,17 +2,17 @@ import { Metadata } from "next";
 import { PracticeAreaDetail } from "@/components/landing/PracticeAreaDetail";
 
 export const metadata: Metadata = {
-    title: "Property & Real Estate Lawyer Bengaluru | Title & Disputes",
-    description: "Expert resolution for property disputes, land acquisition, title verification, and real estate litigation in Bengaluru. Protecting your assets and rights.",
+    title: "Property and Dispute Experts - Civil Lawyers in Bangalore",
+    description: "lawyer for property, recovery & dispute cases. Book your legal",
 };
 
 export default function PropertyDisputesPage() {
     return (
         <main className="pt-20">
             <PracticeAreaDetail
-                title="Property Disputes"
+                title="Lawyer"
                 iconName="Building2"
-                imageUrl="https://images.unsplash.com/photo-1460317442991-0ec239397148?auto=format&fit=crop&q=80&w=1200"
+                imageUrl="/images/1.jpg"
                 description="Expert legal advisory for real estate conflicts and title verifications."
                 detailedContent="Property law in India is complex, involving multiple statutes and local regulations. Adv. Suman Suresh specializes in resolving property conflicts, ranging from title disputes to illegal encroachments. We provide legal opinions on property titles, assist in registration processes, and represent clients in suits for partition, possession, and declaration of ownership."
                 keyPoints={[

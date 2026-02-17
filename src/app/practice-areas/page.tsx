@@ -4,8 +4,8 @@ import { ServicesVisit } from "@/components/landing/ServicesVisit";
 import { PracticeHero } from "@/components/practice-areas/PracticeHero";
 
 export const metadata: Metadata = {
-    title: "Practice Areas | Comprehensive Legal Services in Bengaluru",
-    description: "Explore our wide range of legal services in Bengaluru, including Criminal Defense, Family Law, Civil Litigation, Property Disputes, and Corporate Law.",
+    title: "Advocate Suman - Practice Areas in Bangalore",
+    description: "covering civil, criminal, corporate and family law matters.",
 };
 
 export default function PracticeAreasPage() {

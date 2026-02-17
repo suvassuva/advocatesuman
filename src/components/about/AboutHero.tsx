@@ -30,8 +30,7 @@ export function AboutHero() {
                         Legally Bound. Result Oriented.
                     </span>
                     <h1 className="text-5xl md:text-8xl font-bold font-heading text-white mb-8 tracking-tighter leading-none">
-                        Strength in Law, <br />
-                        <span className="text-primary italic">Faith in Justice.</span>
+                        About Advocate Suman - Highly Experienced Lawyer in Bangalore
                     </h1>
                     <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-300 leading-relaxed font-light">
                         Adv. Suman Suresh brings 5 years of dedicated legal expertise and an unwavering commitment to protecting your rights across Bengaluru.

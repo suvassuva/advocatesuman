@@ -10,37 +10,37 @@ const SERVICES = [
         icon: Gavel,
         title: "Civil Litigation",
         description: "Expert handling of property disputes, breach of contract, and recovery suits.",
-        image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800",
+        image: "/images/3.jpg",
     },
     {
         icon: ShieldAlert,
         title: "Criminal Defense",
         description: "Robust defense strategies for bail, trial, and appeals in criminal cases.",
-        image: "https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?auto=format&fit=crop&q=80&w=800",
+        image: "/images/2.jpg",
     },
     {
         icon: Users,
         title: "Family Law",
         description: "Sensitive resolution for divorce, child custody, and alimony matters.",
-        image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=800",
+        image: "/images/5.jpg",
     },
     {
         icon: Building2,
         title: "Property Disputes",
         description: "Title verification, registration, and resolution of real estate conflicts.",
-        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+        image: "/images/1.jpg",
     },
     {
         icon: Scale,
         title: "Corporate Law",
         description: "Legal advisory for startups, contract drafting, and compliance.",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+        image: "/images/4.jpg",
     },
     {
         icon: FileText,
         title: "Legal Documentation",
         description: "Drafting of wills, deeds, agreements, and legal notices.",
-        image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
+        image: "/images/6.jpg",
     },
 ];
 

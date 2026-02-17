@@ -10,6 +10,7 @@ const NAV_LINKS = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/practice-areas", label: "Practice Areas" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
 ];
 

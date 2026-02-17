@@ -2,17 +2,17 @@ import { Metadata } from "next";
 import { PracticeAreaDetail } from "@/components/landing/PracticeAreaDetail";
 
 export const metadata: Metadata = {
-    title: "Family Law & Divorce Advocate Bengaluru | Compassionate Care",
-    description: "Sensitive legal solutions for divorce, child custody, alimony, and matrimonial disputes in Bengaluru. Expert guidance for family legal matters.",
+    title: "Best Family Law Advocate - Divorce Lawyers in Bangalore",
+    description: "services for mutual & contested cases. Consult trusted divorce",
 };
 
 export default function FamilyLawPage() {
     return (
         <main className="pt-20">
             <PracticeAreaDetail
-                title="Family Law"
+                title="Divorce Lawyer"
                 iconName="Users"
-                imageUrl="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=1200"
+                imageUrl="/images/5.jpg"
                 description="Compassionate resolution for sensitive family and matrimonial matters."
                 detailedContent="Family disputes require not just legal expertise, but also a balanced and sensitive approach. Adv. Suman Suresh provides comprehensive legal solutions for matrimonial issues, including divorce, child custody, and maintenance. We strive to achieve resolutions that protect the interests of our clients and their children, whether through strategic litigation or mediation and settlement."
                 keyPoints={[

@@ -35,8 +35,7 @@ export function Hero() {
                         Trusted Legal Counsel in Bengaluru
                     </div>
                     <h1 className="mb-6 font-heading text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-                        Defending Your Rights, <br />
-                        <span className="text-primary-foreground">Protecting Your Future.</span>
+                        Advocate Suman - Highly Experienced Lawyers in Bangalore
                     </h1>
                     <p className="mb-8 text-lg text-slate-300 sm:text-xl md:max-w-2xl">
                         Experience expert legal representation with a client-first approach.

@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { PracticeAreaDetail } from "@/components/landing/PracticeAreaDetail";
 
 export const metadata: Metadata = {
-    title: "Corporate Law Consultant Bengaluru | Business Legal Support",
-    description: "Comprehensive legal advisory for startups and corporations in Bengaluru. Specializing in contracts, compliance, labor laws, and commercial disputes.",
+    title: "Corporate Lawyer in Bangalore",
+    description: "Legal advisory for startups, SMEs, and companies in Bangalore, specializing in registration, contracts, and compliance.",
 };
 
 export default function CorporateLawPage() {
@@ -11,9 +11,9 @@ export default function CorporateLawPage() {
         <main className="pt-20">
             <PracticeAreaDetail
                 title="Corporate Law"
-                iconName="Scale"
-                imageUrl="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200"
-                description="Specialized legal advisory for startups, SMEs, and corporate entities."
+                iconName="Building2"
+                imageUrl="/images/4.jpg"
+                description="Comprehensive legal services for businesses, including company formation, contract drafting, compliance, and corporate governance. We help your business navigate the legal complexities of the corporate world."
                 detailedContent="Navigating the legal landscape of business requires foresight and specialized knowledge. Adv. Suman Suresh offers a range of corporate legal services designed to support businesses at every stage—from incorporation to complex contract management. We focus on ensuring compliance with Indian corporate laws while providing strategic advice to mitigate risks and protect commercial interests."
                 keyPoints={[
                     "Entity Incorporation & MSME Registration",
