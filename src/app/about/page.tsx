@@ -12,7 +12,7 @@ import { ReadyToDiscuss } from "@/components/about/ReadyToDiscuss";
 
 export const metadata: Metadata = {
     title: "About Advocate Suman - Highly Experienced Lawyer",
-    description: "Bangalore known for strategic legal guidance and trusted",
+    description: "Learn about Advocate Suman, a highly experienced lawyer in Bangalore known for strategic legal guidance and trusted representation.",
 };
 
 export default function AboutPage() {

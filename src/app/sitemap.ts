@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://sumansureshadvocate.com'; // Conceptual production URL
+    const baseUrl = 'https://advocatesuman.in';
 
     const routes = [
         '',

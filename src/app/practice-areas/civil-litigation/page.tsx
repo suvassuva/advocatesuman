@@ -3,14 +3,14 @@ import { PracticeAreaDetail } from "@/components/landing/PracticeAreaDetail";
 
 export const metadata: Metadata = {
     title: "Civil Lawyers in Bangalore",
-    description: "Expert legal representation for civil disputes, including contracts, property, and personal injury matters in Bangalore.",
+    description: "Best civil lawyers in Bangalore for property & contract disputes. Consult an experienced civil litigation lawyer. Call now for expert help.",
 };
 
 export default function CivilLitigationPage() {
     return (
         <main className="pt-20">
             <PracticeAreaDetail
-                title="Civil Litigation"
+                title="Best Civil Lawyers in Bangalore - Expert Civil Litigation Lawyer"
                 iconName="Gavel"
                 imageUrl="/images/3.jpg"
                 description="Expert legal representation for disputes involving contracts, property, personal injury, and other civil matters. We are dedicated to protecting your interests and achieving the best possible outcome."

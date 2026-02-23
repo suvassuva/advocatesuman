@@ -2,15 +2,15 @@ import { Metadata } from "next";
 import { PracticeAreaDetail } from "@/components/landing/PracticeAreaDetail";
 
 export const metadata: Metadata = {
-    title: "Bangalore",
-    description: "services in Bangalore including agreements, contracts and legal",
+    title: "Advocate Suman - Legal Documentation Services Bangalore",
+    description: "Advocate Suman offers professional legal documentation services in Bangalore including agreements, contracts and legal drafting. Book consultation today.",
 };
 
 export default function LegalDocumentationPage() {
     return (
         <main className="pt-20">
             <PracticeAreaDetail
-                title="Legal Documentation" // Updated title
+                title="Legal Documentation Services in Bangalore - Advocate Suman"
                 iconName="FileText" // Kept original iconName as it was not explicitly removed
                 imageUrl="/images/6.jpg" // Updated image path and prop name
                 description="Meticulous drafting and review of legal documents, including wills, power of attorney, trust deeds, rental agreements, and partnership deeds, ensuring full legal compliance and protection." // Updated description

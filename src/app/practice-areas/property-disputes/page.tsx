@@ -3,14 +3,14 @@ import { PracticeAreaDetail } from "@/components/landing/PracticeAreaDetail";
 
 export const metadata: Metadata = {
     title: "Property and Dispute Experts - Civil Lawyers in Bangalore",
-    description: "lawyer for property, recovery & dispute cases. Book your legal",
+    description: "Looking for civil lawyers in Bangalore? Expert civil litigation lawyer for property, recovery & dispute cases. Book your legal consultation today.",
 };
 
 export default function PropertyDisputesPage() {
     return (
         <main className="pt-20">
             <PracticeAreaDetail
-                title="Lawyer"
+                title="Civil Lawyers in Bangalore - Expert Civil Litigation Lawyer"
                 iconName="Building2"
                 imageUrl="/images/1.jpg"
                 description="Expert legal advisory for real estate conflicts and title verifications."

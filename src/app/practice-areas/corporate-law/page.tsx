@@ -2,15 +2,15 @@ import { Metadata } from "next";
 import { PracticeAreaDetail } from "@/components/landing/PracticeAreaDetail";
 
 export const metadata: Metadata = {
-    title: "Corporate Lawyer in Bangalore",
-    description: "Legal advisory for startups, SMEs, and companies in Bangalore, specializing in registration, contracts, and compliance.",
+    title: "Expert Corporate Legal Services - Corporate Law Firms in Bangalore",
+    description: "Looking for trusted corporate law firms in Bangalore? Get expert legal advisory, compliance & business solutions. Contact us today for consultation.",
 };
 
 export default function CorporateLawPage() {
     return (
         <main className="pt-20">
             <PracticeAreaDetail
-                title="Corporate Law"
+                title="Corporate Law Firms in Bangalore - Expert Corporate Legal Services"
                 iconName="Building2"
                 imageUrl="/images/4.jpg"
                 description="Comprehensive legal services for businesses, including company formation, contract drafting, compliance, and corporate governance. We help your business navigate the legal complexities of the corporate world."

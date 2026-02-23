@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "en_IN",
-        url: "https://sumanandco.com", // Conceptual URL
+        url: "https://advocatesuman.in",
         siteName: "Suman & Co. Legal Services",
         title: "Adv. Suman Suresh | Legal Excellence in Bengaluru",
         description: "Professional legal representation and consultancy services for civil, criminal, and family matters in Bengaluru.",
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
             'max-snippet': -1,
         },
     },
+    metadataBase: new URL("https://advocatesuman.in"),
 };
 
-// ... imports
 import { Navbar } from "@/components/common/Navbar";
 import { Footer } from "@/components/common/Footer";
 import { FloatingContact } from "@/components/common/FloatingContact";
@@ -69,7 +69,7 @@ export default function RootLayout({
         "name": "Adv. Suman Suresh | Suman & Co. Legal Services",
         "image": "https://sumansureshadvocate.com/images/advocate.png",
         "@id": "https://sumansureshadvocate.com",
-        "url": "https://sumansureshadvocate.com",
+        "url": "https://advocatesuman.in",
         "telephone": CONTACT_DETAILS.PHONE_PRIMARY,
         "address": {
             "@type": "PostalAddress",

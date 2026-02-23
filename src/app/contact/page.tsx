@@ -6,7 +6,7 @@ import { MapSection } from "@/components/contact/MapSection";
 
 export const metadata: Metadata = {
     title: "Contact Advocate Suman - Bangalore",
-    description: "consultation and strategic guidance. Schedule your appointment",
+    description: "Connect with Advocate Suman in Bangalore for confidential legal consultation and strategic guidance. Schedule your appointment today.",
 };
 
 export default function ContactPage() {

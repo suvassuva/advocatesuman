@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/private/', '/admin/'],
         },
-        sitemap: 'https://sumansureshadvocate.com/sitemap.xml',
+        sitemap: 'https://advocatesuman.in/sitemap.xml',
     };
 }

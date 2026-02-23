@@ -2,15 +2,15 @@ import { Metadata } from "next";
 import { PracticeAreaDetail } from "@/components/landing/PracticeAreaDetail";
 
 export const metadata: Metadata = {
-    title: "Criminal Lawyers in Bangalore",
-    description: "Strategic criminal defense for bail, white-collar crimes, and criminal litigation in Bangalore trial courts and High Court.",
+    title: "Best Legal Defense Support - Criminal Lawyers in Bangalore",
+    description: "Best criminal lawyers in Bangalore for bail, trial & fraud defense. Speak with an experienced criminal defense lawyer. Call now for consultation.",
 };
 
 export default function CriminalDefensePage() {
     return (
         <main className="pt-20">
             <PracticeAreaDetail
-                title="Criminal Defense"
+                title="Best Criminal Lawyers in Bangalore - Criminal Defense Lawyer"
                 iconName="ShieldAlert"
                 imageUrl="/images/2.jpg"
                 description="Robust legal defense for individuals facing criminal charges. We ensure your rights are protected throughout the legal process and work tirelessly to build a strong defense for your case."

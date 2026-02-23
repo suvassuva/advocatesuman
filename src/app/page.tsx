@@ -12,7 +12,7 @@ import { GoogleReviews } from "@/components/landing/GoogleReviews";
 
 export const metadata: Metadata = {
     title: "Advocate Suman - Highly Experienced Lawyers Bangalore",
-    description: "providing trusted legal guidance and strong representation. Book",
+    description: "Advocate Suman is a highly experienced lawyer in Bangalore providing trusted legal guidance and strong representation. Book your consultation today.",
 };
 
 export default function Home() {

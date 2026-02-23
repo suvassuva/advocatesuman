@@ -3,14 +3,14 @@ import { PracticeAreaDetail } from "@/components/landing/PracticeAreaDetail";
 
 export const metadata: Metadata = {
     title: "Best Family Law Advocate - Divorce Lawyers in Bangalore",
-    description: "services for mutual & contested cases. Consult trusted divorce",
+    description: "Best divorce lawyers in Bangalore offering expert divorce lawyer services for mutual & contested cases. Consult trusted divorce lawyers today.",
 };
 
 export default function FamilyLawPage() {
     return (
         <main className="pt-20">
             <PracticeAreaDetail
-                title="Divorce Lawyer"
+                title="Best Divorce Lawyers in Bangalore - Experienced Divorce Lawyer"
                 iconName="Users"
                 imageUrl="/images/5.jpg"
                 description="Compassionate resolution for sensitive family and matrimonial matters."
