@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { format } from "date-fns";
-import { Calendar, User, Clock, ArrowLeft } from "lucide-react";
+import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import type { BlogPost } from "@/lib/blog";
 

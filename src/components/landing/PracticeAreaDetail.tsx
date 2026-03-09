@@ -2,9 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Gavel, ShieldAlert, Users, Building2, Scale, FileText, CheckCircle, ArrowRight } from "lucide-react";
-import { SectionHeader } from "@/components/common/SectionHeader";
-import { CTAButton } from "@/components/common/CTAButton";
+import { Gavel, ShieldAlert, Users, Building2, Scale, FileText, CheckCircle } from "lucide-react";
 import { CONTACT_DETAILS } from "@/lib/constants";
 
 import { PremiumSlider } from "@/components/common/PremiumSlider";
@@ -75,7 +73,7 @@ export function PracticeAreaDetail({ title, iconName, imageUrl, description, det
                         className="mb-12"
                     >
                         <p className="text-xl text-muted-foreground leading-relaxed italic border-l-4 border-primary/20 pl-6 mb-12">
-                            "{description}"
+                            &quot;{description}&quot;
                         </p>
                     </motion.div>
                 </div>

@@ -29,7 +29,7 @@ export function ReadyToDiscuss() {
                             Ready to Discuss Your Case?
                         </h2>
                         <p className="mb-10 max-w-2xl text-lg text-white/90">
-                            Let's work together to find the right legal path forward. Our empathetic approach ensures you feel heard and supported throughout the entire process.
+                            Let&apos;s work together to find the right legal path forward. Our empathetic approach ensures you feel heard and supported throughout the entire process.
                         </p>
                         <Link
                             href="/contact"

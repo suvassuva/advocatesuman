@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { CTAButton } from "@/components/common/CTAButton";
-import { Send, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Send, Phone, Mail, Clock } from "lucide-react";
 import { CONTACT_DETAILS } from "@/lib/constants";
 
 export function ContactForm() {

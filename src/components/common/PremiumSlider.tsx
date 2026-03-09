@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface PremiumSliderProps {
     images: string[];
@@ -20,7 +21,6 @@ export function PremiumSlider({
     className,
     imageClassName,
     overlayClassName,
-    showArrows = false,
     showDots = false,
 }: PremiumSliderProps) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,10 +43,11 @@ export function PremiumSlider({
                     transition={{ duration: 1.5, ease: "easeInOut" }}
                     className="absolute inset-0"
                 >
-                    <img
+                    <Image
                         src={images[currentIndex]}
                         alt={`Slide ${currentIndex + 1}`}
-                        className={cn("h-full w-full object-cover", imageClassName)}
+                        fill
+                        className={cn("object-cover", imageClassName)}
                     />
                     <div className={cn("absolute inset-0", overlayClassName)} />
                 </motion.div>

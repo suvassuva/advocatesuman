@@ -1,0 +1,62 @@
+﻿
+> adv@0.1.0 lint
+> eslint
+
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\app\blog\[slug]\page.tsx
+  7:10  warning  'CTAButton' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\about\PhilosophyAndApproach.tsx
+  43:41   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  43:132  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  56:37   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\about\PracticeAreasExpertise.tsx
+  4:43  warning  'Scale' is defined but never used     @typescript-eslint/no-unused-vars
+  4:50  warning  'FileText' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\about\ProfessionalJourney.tsx
+  41:29  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\about\ReadyToDiscuss.tsx
+  32:32  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\blog\BlogCard.tsx
+  7:40  warning  'Tag' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\blog\PostHeader.tsx
+  6:20  warning  'User' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\common\JsonLd.tsx
+  6:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\common\ParallaxDivider.tsx
+  26:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\common\PremiumSlider.tsx
+  23:5   warning  'showArrows' is assigned a value but never used                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+  46:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\landing\ContactForm.tsx
+  6:16  warning  'MapPin' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\landing\GoogleReviews.tsx
+    4:10  warning  'SectionHeader' is defined but never used                        @typescript-eslint/no-unused-vars
+  110:33  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  110:47  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\landing\PracticeAreaDetail.tsx
+   5:78  warning  'ArrowRight' is defined but never used                           @typescript-eslint/no-unused-vars
+   6:10  warning  'SectionHeader' is defined but never used                        @typescript-eslint/no-unused-vars
+   7:10  warning  'CTAButton' is defined but never used                            @typescript-eslint/no-unused-vars
+  78:29  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  78:43  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\src\components\landing\PracticeAreas.tsx
+  93:41  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Electrobot\OneDrive\Desktop\adv\tailwind.config.ts
+  58:9  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+Γ£û 25 problems (9 errors, 16 warnings)
+

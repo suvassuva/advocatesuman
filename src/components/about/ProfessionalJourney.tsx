@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap, Briefcase, Award } from "lucide-react";
+import Image from "next/image";
 
 const journeySteps = [
     {
@@ -38,10 +39,11 @@ export function ProfessionalJourney() {
                             transition={{ duration: 0.8 }}
                             className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl"
                         >
-                            <img
+                            <Image
                                 src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800"
                                 alt="Professional Journey"
-                                className="w-full h-full object-cover"
+                                fill
+                                className="object-cover"
                             />
                             <div className="absolute inset-0 bg-primary/20 mix-blend-multiply" />
                             <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-slate-900 to-transparent">

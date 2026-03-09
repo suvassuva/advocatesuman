@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
+import Image from "next/image";
 
 export function PhilosophyAndApproach() {
     return (
@@ -40,7 +41,7 @@ export function PhilosophyAndApproach() {
                                 </div>
                                 <div className="p-8 rounded-3xl bg-primary/5 border border-primary/10">
                                     <p className="text-xl italic font-heading text-primary leading-relaxed">
-                                        "The legality of a solution is just the beginning; its practicality determines its success."
+                                        &quot;The legality of a solution is just the beginning; its practicality determines its success.&quot;
                                     </p>
                                 </div>
                             </div>
@@ -53,10 +54,11 @@ export function PhilosophyAndApproach() {
                                     transition={{ duration: 0.8 }}
                                     className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl"
                                 >
-                                    <img
+                                    <Image
                                         src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200"
                                         alt="Philosophy of Justice"
-                                        className="w-full h-full object-cover"
+                                        fill
+                                        className="object-cover"
                                     />
                                     <div className="absolute inset-0 bg-primary/10 mix-blend-overlay" />
                                 </motion.div>

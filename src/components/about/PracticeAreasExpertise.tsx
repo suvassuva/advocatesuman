@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Users, ShieldAlert, Home, Gavel, Scale, FileText } from "lucide-react";
+import { Users, ShieldAlert, Home, Gavel } from "lucide-react";
 
 const areas = [
     {

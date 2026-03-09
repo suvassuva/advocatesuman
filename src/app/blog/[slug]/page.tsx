@@ -4,7 +4,6 @@ import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import { getBlogPostBySlug, getAllPosts } from "@/lib/blog";
 import { PostHeader } from "@/components/blog/PostHeader";
-import { CTAButton } from "@/components/common/CTAButton";
 import { Calendar, Phone } from "lucide-react";
 import Link from "next/link";
 import { format } from "date-fns";

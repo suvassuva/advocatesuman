@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SectionHeader } from "@/components/common/SectionHeader";
 import { Star, CheckCircle2, ChevronRight } from "lucide-react";
 
 const REVIEWS = [
@@ -107,7 +106,7 @@ export function GoogleReviews() {
                                 </div>
                             </div>
                             <p className="text-sm text-slate-600 leading-relaxed italic">
-                                "{review.text}"
+                                &quot;{review.text}&quot;
                             </p>
                         </motion.div>
                     ))}

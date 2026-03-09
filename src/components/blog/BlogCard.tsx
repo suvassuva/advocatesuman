@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { format } from "date-fns";
-import { ArrowUpRight, Calendar, User, Tag } from "lucide-react";
+import { ArrowUpRight, Calendar, User } from "lucide-react";
 import type { BlogPost } from "@/lib/blog";
 
 interface BlogCardProps {

@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 interface ParallaxDividerProps {
     imageUrl: string;
@@ -23,10 +24,11 @@ export function ParallaxDivider({ imageUrl, height = "h-[40vh]" }: ParallaxDivid
                 style={{ y }}
                 className="absolute inset-0 z-0 h-[140%] w-full"
             >
-                <img
+                <Image
                     src={imageUrl}
                     alt="Divider"
-                    className="h-full w-full object-cover grayscale opacity-40"
+                    fill
+                    className="object-cover grayscale opacity-40"
                 />
             </motion.div>
             <div className="absolute inset-0 bg-slate-900/40" />
