@@ -40,5 +40,18 @@ A high-performance, SEO-optimized professional landing page and blog system for 
 - Resolved serialization errors for server-rendered components.
 - Added comprehensive metadata for all legal service categories.
 
+## 📈 SEO URL Migration Plan (Next Steps)
+
+The following URL structure has been proposed to enhance local SEO and keyword relevance:
+
+| Current URL | Suggested SEO URL | Primary Keyword Focus |
+| :--- | :--- | :--- |
+| `/practice-areas/civil-litigati` | `/civil-lawyers-in-bangalore` | Civil Lawyers |
+| `/practice-areas/criminal-de` | `/practice-areas/criminal-lawyers-in-bangalore` | Criminal Lawyers |
+| `/practice-areas/family-law` | `/divorce-lawyers-in-bangalore` | Divorce Lawyers |
+| `/practice-areas/property-di` | `/property-dispute-lawyers-in-bangalore` | Property Dispute Lawyers |
+| `/practice-areas/corporate-l` | `/corporate-law-firms-in-bangalore` | Corporate Law Firms |
+| `/practice-areas/legal-docur` | `/legal-consultants-in-bangalore` | Legal Consultants |
+
 ---
 *Created and maintained with Antigravity AI.*

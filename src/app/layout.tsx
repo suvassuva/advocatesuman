@@ -53,7 +53,6 @@ export const metadata: Metadata = {
 
 import { Navbar } from "@/components/common/Navbar";
 import { Footer } from "@/components/common/Footer";
-import { FloatingContact } from "@/components/common/FloatingContact";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { JsonLd } from "@/components/common/JsonLd";
 import { CONTACT_DETAILS } from "@/lib/constants";
@@ -113,7 +112,6 @@ export default function RootLayout({
                 <Navbar />
                 {children}
                 <Footer />
-                <FloatingContact />
                 <FloatingWhatsApp />
             </body>
         </html>
