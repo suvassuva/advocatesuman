@@ -1,0 +1,41 @@
+﻿
+> adv@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 18.8s
+  Running TypeScript ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/18) ...
+  Generating static pages using 11 workers (4/18) 
+  Generating static pages using 11 workers (8/18) 
+  Generating static pages using 11 workers (13/18) 
+Γ£ô Generating static pages using 11 workers (18/18) in 938.3ms
+  Finalizing page optimization ...
+
+Route (app)
+Γöî Γùï /
+Γö£ Γùï /_not-found
+Γö£ Γùï /about
+Γö£ Γùï /blog
+Γö£ ΓùÅ /blog/[slug]
+Γöé Γö£ /blog/understanding-civil-litigation
+Γöé Γö£ /blog/mutual-consent-divorce
+Γöé Γöö /blog/property-title-verification
+Γö£ Γùï /civil-lawyers-in-bangalore
+Γö£ Γùï /contact
+Γö£ Γùï /corporate-law-firms-in-bangalore
+Γö£ Γùï /criminal-lawyers-in-bangalore
+Γö£ Γùï /divorce-lawyers-in-bangalore
+Γö£ Γùï /legal-consultants-in-bangalore
+Γö£ Γùï /practice-areas
+Γö£ Γùï /property-dispute-lawyers-in-bangalore
+Γö£ Γùï /robots.txt
+Γöö Γùï /sitemap.xml
+
+
+Γùï  (Static)  prerendered as static content
+ΓùÅ  (SSG)     prerendered as static HTML (uses generateStaticParams)
+

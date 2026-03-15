@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { PracticeAreaDetail } from "@/components/landing/PracticeAreaDetail";
 
 export const metadata: Metadata = {
-    title: "Advocate Suman - Legal Documentation Services Bangalore",
-    description: "Advocate Suman offers professional legal documentation services in Bangalore including agreements, contracts and legal drafting. Book consultation today.",
+    title: "Best Legal Consultants in Bangalore - Advocate Suman",
+    description: "Looking for expert legal consultants in Bangalore? Advocate Suman offers professional legal documentation and consultation services. Book your appointment today.",
 };
 
 export default function LegalDocumentationPage() {

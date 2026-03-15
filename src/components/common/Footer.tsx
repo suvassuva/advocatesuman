@@ -54,11 +54,11 @@ export function Footer() {
                     <div>
                         <h3 className="mb-4 text-lg font-bold text-white">Practice Areas</h3>
                         <ul className="space-y-2 text-sm">
-                            <li>Civil Litigation</li>
-                            <li>Criminal Defense</li>
-                            <li>Family Law</li>
-                            <li>Corporate Law</li>
-                            <li>Property Disputes</li>
+                            <li><Link href="/civil-lawyers-in-bangalore" className="hover:text-white">Civil Litigation</Link></li>
+                            <li><Link href="/criminal-lawyers-in-bangalore" className="hover:text-white">Criminal Defense</Link></li>
+                            <li><Link href="/divorce-lawyers-in-bangalore" className="hover:text-white">Family Law</Link></li>
+                            <li><Link href="/corporate-law-firms-in-bangalore" className="hover:text-white">Corporate Law</Link></li>
+                            <li><Link href="/property-dispute-lawyers-in-bangalore" className="hover:text-white">Property Disputes</Link></li>
                         </ul>
                     </div>
 

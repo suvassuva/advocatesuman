@@ -8,12 +8,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/about',
         '/practice-areas',
         '/contact',
-        '/practice-areas/criminal-defense',
-        '/practice-areas/family-law',
-        '/practice-areas/civil-litigation',
-        '/practice-areas/property-disputes',
-        '/practice-areas/corporate-law',
-        '/practice-areas/legal-documentation',
+        '/criminal-lawyers-in-bangalore',
+        '/divorce-lawyers-in-bangalore',
+        '/civil-lawyers-in-bangalore',
+        '/property-dispute-lawyers-in-bangalore',
+        '/corporate-law-firms-in-bangalore',
+        '/legal-consultants-in-bangalore',
     ];
 
     return routes.map((route) => ({

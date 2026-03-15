@@ -10,36 +10,42 @@ const SERVICES = [
     {
         icon: Gavel,
         title: "Civil Litigation",
+        slug: "civil-lawyers-in-bangalore",
         description: "Expert handling of property disputes, breach of contract, and recovery suits.",
         image: "/images/3.jpg",
     },
     {
         icon: ShieldAlert,
         title: "Criminal Defense",
+        slug: "criminal-lawyers-in-bangalore",
         description: "Robust defense strategies for bail, trial, and appeals in criminal cases.",
         image: "/images/2.jpg",
     },
     {
         icon: Users,
         title: "Family Law",
+        slug: "divorce-lawyers-in-bangalore",
         description: "Sensitive resolution for divorce, child custody, and alimony matters.",
         image: "/images/5.jpg",
     },
     {
         icon: Building2,
         title: "Property Disputes",
+        slug: "property-dispute-lawyers-in-bangalore",
         description: "Title verification, registration, and resolution of real estate conflicts.",
         image: "/images/1.jpg",
     },
     {
         icon: Scale,
         title: "Corporate Law",
+        slug: "corporate-law-firms-in-bangalore",
         description: "Legal advisory for startups, contract drafting, and compliance.",
         image: "/images/4.jpg",
     },
     {
         icon: FileText,
         title: "Legal Documentation",
+        slug: "legal-consultants-in-bangalore",
         description: "Drafting of wills, deeds, agreements, and legal notices.",
         image: "/images/6.jpg",
     },
@@ -71,11 +77,10 @@ export function PracticeAreas() {
                     }}
                 >
                     {SERVICES.map((service) => {
-                        const slug = service.title.toLowerCase().replace(/\s+/g, '-');
                         return (
                             <Link
                                 key={service.title}
-                                href={`/practice-areas/${slug}`}
+                                href={`/${service.slug}`}
                                 className="block group"
                             >
                                 <motion.div
