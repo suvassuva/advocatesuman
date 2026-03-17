@@ -14,6 +14,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/property-dispute-lawyers-in-bangalore',
         '/corporate-law-firms-in-bangalore',
         '/legal-consultants-in-bangalore',
+        '/blog',
+        '/blog/property-title-verification',
+        '/blog/understanding-civil-litigation',
+        '/blog/mutual-consent-divorce',
+        
     ];
 
     return routes.map((route) => ({
