@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair-display" });
@@ -113,6 +114,22 @@ export default function RootLayout({
                 {children}
                 <Footer />
                 <FloatingWhatsApp />
+
+                {/* ✅ Google Analytics START */}
+            <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-M1C5D8KTVV"
+                strategy="afterInteractive"
+            />
+            <Script id="ga-script" strategy="afterInteractive">
+                {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-M1C5D8KTVV');
+                `}
+            </Script>
+            {/* ✅ Google Analytics END */}
+                
             </body>
         </html>
     );
