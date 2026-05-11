@@ -56,6 +56,7 @@ import { Footer } from "@/components/common/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { JsonLd } from "@/components/common/JsonLd";
 import { CONTACT_DETAILS } from "@/lib/constants";
+import { ClientLayoutWrapper } from "@/components/common/ClientLayoutWrapper";
 
 export default function RootLayout({
     children,
@@ -109,10 +110,12 @@ export default function RootLayout({
         <html lang="en">
             <body className={cn(inter.variable, playfair.variable, "font-sans antialiased")}>
                 <JsonLd data={legalServiceSchema} />
-                <Navbar />
-                {children}
-                <Footer />
-                <FloatingWhatsApp />
+                <ClientLayoutWrapper>
+                    <Navbar />
+                    {children}
+                    <Footer />
+                    <FloatingWhatsApp />
+                </ClientLayoutWrapper>
             </body>
         </html>
     );
