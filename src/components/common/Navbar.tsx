@@ -36,10 +36,12 @@ export function Navbar() {
         >
             <div className="container mx-auto flex h-14 sm:h-20 items-center justify-between px-3.5 sm:px-6 max-w-7xl">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2.5 sm:gap-3 min-w-0 group">
-                    <Scale className="h-6 w-6 sm:h-7 sm:w-7 text-white shrink-0 group-hover:scale-105 transition-transform" />
+                <Link href="/" className="flex items-center gap-2 sm:gap-2.5 min-w-0">
+                    <div className="flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm border border-primary/40">
+                        <Scale className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
+                    </div>
                     <div className="flex flex-col min-w-0">
-                        <span className="font-heading text-base sm:text-xl font-bold leading-none tracking-tight text-white group-hover:text-amber-300 transition-colors truncate">
+                        <span className="font-heading text-base sm:text-xl font-bold leading-none tracking-tight text-white truncate">
                             Suman & Co.
                         </span>
                         <span className="text-[8px] sm:text-[10px] uppercase tracking-wider text-slate-300 font-medium truncate mt-0.5">

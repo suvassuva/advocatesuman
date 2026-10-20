@@ -49,9 +49,9 @@ export function SplashScreen({ onComplete }: { onComplete: () => void }) {
                                 initial={{ y: 15, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.15, duration: 0.6 }}
-                                className="flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center rounded-2xl bg-white/10 text-white border border-white/20 shadow-lg"
+                                className="flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center rounded-2xl bg-primary text-white shadow-lg"
                             >
-                                <Scale className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
+                                <Scale className="h-8 w-8 sm:h-10 sm:w-10" />
                             </motion.div>
 
                             {/* Text Content */}
