@@ -121,8 +121,8 @@ export function PWAInstallPrompt() {
                     >
                         <div className="flex items-center gap-3">
                             {/* App Logo */}
-                            <div className="h-10 w-10 shrink-0 rounded-xl bg-gradient-to-br from-slate-900 to-slate-950 border border-amber-500/40 flex items-center justify-center shadow-inner">
-                                <Scale className="h-5 w-5 text-amber-400" />
+                            <div className="h-10 w-10 shrink-0 rounded-xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/20 flex items-center justify-center shadow-inner">
+                                <Scale className="h-5 w-5 text-white" />
                             </div>
 
                             {/* Info */}

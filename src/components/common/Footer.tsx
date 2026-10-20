@@ -17,7 +17,7 @@ export function Footer() {
                     {/* Brand */}
                     <div className="space-y-4">
                         <div className="flex items-center gap-2 text-white">
-                            <Scale className="h-6 w-6 sm:h-7 sm:w-7 text-amber-400" />
+                            <Scale className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                             <span className="font-heading text-lg sm:text-xl font-bold">Suman & Co.</span>
                         </div>
                         <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">

@@ -37,7 +37,7 @@ export function Navbar() {
             <div className="container mx-auto flex h-14 sm:h-20 items-center justify-between px-3.5 sm:px-6 max-w-7xl">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2.5 sm:gap-3 min-w-0 group">
-                    <Scale className="h-6 w-6 sm:h-7 sm:w-7 text-amber-400 shrink-0 group-hover:scale-105 transition-transform" />
+                    <Scale className="h-6 w-6 sm:h-7 sm:w-7 text-white shrink-0 group-hover:scale-105 transition-transform" />
                     <div className="flex flex-col min-w-0">
                         <span className="font-heading text-base sm:text-xl font-bold leading-none tracking-tight text-white group-hover:text-amber-300 transition-colors truncate">
                             Suman & Co.
