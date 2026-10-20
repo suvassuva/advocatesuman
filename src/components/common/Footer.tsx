@@ -11,13 +11,13 @@ const SOCIAL_LINKS = [
 
 export function Footer() {
     return (
-        <footer className="bg-slate-950 py-8 sm:py-12 text-slate-200 border-t border-white/5 overflow-hidden">
+        <footer className="bg-slate-950 pt-8 sm:pt-12 pb-24 sm:pb-28 md:pb-12 text-slate-200 border-t border-white/5 overflow-hidden">
             <div className="container mx-auto px-4 md:px-6 max-w-6xl">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
                     {/* Brand */}
                     <div className="space-y-4">
                         <div className="flex items-center gap-2 text-white">
-                            <Scale className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
+                            <Scale className="h-6 w-6 sm:h-7 sm:w-7 text-amber-400" />
                             <span className="font-heading text-lg sm:text-xl font-bold">Suman & Co.</span>
                         </div>
                         <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
@@ -93,9 +93,9 @@ export function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-8 border-t border-slate-800/80 pt-6 text-center text-[10px] sm:text-xs text-slate-500 space-y-1">
-                    <p>© {new Date().getFullYear()} Suman & Co. Advocates. All rights reserved.</p>
-                    <p className="max-w-2xl mx-auto leading-relaxed">
+                <div className="mt-8 border-t border-slate-800/80 pt-6 text-center text-xs text-slate-400 space-y-1.5">
+                    <p className="font-medium text-slate-300">© {new Date().getFullYear()} Suman & Co. Advocates. All rights reserved.</p>
+                    <p className="max-w-2xl mx-auto leading-relaxed text-slate-400 text-[11px] sm:text-xs text-pretty">
                         Disclaimer: The information provided on this website does not constitute legal advice.
                         Consultation is recommended for specific legal matters.
                     </p>
