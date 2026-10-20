@@ -1,5 +1,7 @@
+"use client";
+
 import Link from "next/link";
-import { Scale, Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Scale, Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram, Download } from "lucide-react";
 import { CONTACT_DETAILS } from "@/lib/constants";
 
 const SOCIAL_LINKS = [
@@ -36,6 +38,23 @@ export function Footer() {
                                 </Link>
                             ))}
                         </div>
+                        <div className="pt-1">
+                            <button
+                                onClick={() => {
+                                    if (typeof window !== "undefined") {
+                                        window.dispatchEvent(new CustomEvent("open-pwa-install"));
+                                    }
+                                }}
+                                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 hover:bg-amber-500/20 text-xs font-semibold transition-all active:scale-95"
+                                aria-label="Install App"
+                            >
+                                <Download className="h-3.5 w-3.5" />
+                                <span>Install Web App</span>
+                                <span className="text-[9px] bg-amber-500/20 text-amber-300 px-1 py-0.2 rounded font-bold uppercase">
+                                    PWA
+                                </span>
+                            </button>
+                        </div>
                     </div>
 
                     {/* Quick Links */}
@@ -47,6 +66,19 @@ export function Footer() {
                             <li><Link href="/practice-areas" className="hover:text-white transition-colors">Practice Areas</Link></li>
                             <li><Link href="/blog" className="hover:text-white transition-colors">Blog & Updates</Link></li>
                             <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
+                            <li>
+                                <button
+                                    onClick={() => {
+                                        if (typeof window !== "undefined") {
+                                            window.dispatchEvent(new CustomEvent("open-pwa-install"));
+                                        }
+                                    }}
+                                    className="flex items-center gap-1.5 text-amber-400 hover:text-amber-300 transition-colors font-medium text-left"
+                                >
+                                    <Download className="h-3 w-3" />
+                                    <span>Install App (PWA)</span>
+                                </button>
+                            </li>
                         </ul>
                     </div>
 

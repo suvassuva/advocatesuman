@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Scale } from "lucide-react";
+import { Scale, Download } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { CTAButton } from "@/components/common/CTAButton";
 
@@ -50,6 +50,18 @@ export function Navbar() {
                     </div>
                 </Link>
 
+                {/* Mobile Install App Button */}
+                <div className="flex items-center gap-2 md:hidden">
+                    <button
+                        onClick={() => window.dispatchEvent(new CustomEvent("open-pwa-install"))}
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold text-xs shadow-md shadow-amber-500/20 active:scale-95 transition-all border border-amber-400/40"
+                        aria-label="Install App"
+                    >
+                        <Download className="h-3.5 w-3.5 text-slate-950" />
+                        <span>Install App</span>
+                    </button>
+                </div>
+
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-6 lg:gap-8">
                     {NAV_LINKS.map((link) => (
@@ -61,6 +73,15 @@ export function Navbar() {
                             {link.label}
                         </Link>
                     ))}
+                    <button
+                        onClick={() => window.dispatchEvent(new CustomEvent("open-pwa-install"))}
+                        className="flex items-center gap-1.5 text-xs font-semibold text-amber-400 hover:text-amber-300 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 hover:bg-amber-500/20 transition-all active:scale-95 shadow-sm"
+                        title="Install Progressive Web App on your device"
+                        aria-label="Install App"
+                    >
+                        <Download className="h-3.5 w-3.5" />
+                        <span>Install App</span>
+                    </button>
                     <CTAButton
                         size="sm"
                         onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
