@@ -20,7 +20,7 @@ export function Hero() {
             <div className="absolute inset-0 z-0">
                 <PremiumSlider
                     images={HERO_IMAGES}
-                    overlayClassName="bg-gradient-to-r from-slate-950/95 via-slate-900/85 to-slate-900/75"
+                    overlayClassName="bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-900/50"
                     interval={7000}
                 />
             </div>

@@ -28,10 +28,10 @@ export function ParallaxDivider({ imageUrl, height = "h-[40vh]" }: ParallaxDivid
                     src={imageUrl}
                     alt="Divider"
                     fill
-                    className="object-cover grayscale opacity-40"
+                    className="object-cover opacity-75"
                 />
             </motion.div>
-            <div className="absolute inset-0 bg-slate-900/40" />
+            <div className="absolute inset-0 bg-slate-950/30" />
             <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-transparent to-slate-50" />
         </div>
     );

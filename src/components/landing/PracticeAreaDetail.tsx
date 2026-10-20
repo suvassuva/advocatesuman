@@ -37,11 +37,11 @@ export function PracticeAreaDetail({ title, iconName, imageUrl, description, det
     return (
         <section className="bg-white overflow-hidden">
             {/* Hero Header for Practice Area */}
-            <div className="relative h-[35vh] min-h-[260px] sm:h-[45vh] sm:min-h-[380px] flex items-center justify-center overflow-hidden pt-12">
+            <div className="relative min-h-[320px] sm:min-h-[380px] md:min-h-[420px] flex items-center justify-center overflow-hidden py-14 sm:py-20 pt-20 sm:pt-24 border-b border-slate-800">
                 <div className="absolute inset-0 z-0">
                     <PremiumSlider
                         images={sliderImages}
-                        overlayClassName="bg-slate-950/80 backdrop-blur-[2px]"
+                        overlayClassName="bg-gradient-to-b from-slate-950/75 via-slate-950/55 to-slate-950/80"
                         interval={6500}
                     />
                 </div>
@@ -52,13 +52,13 @@ export function PracticeAreaDetail({ title, iconName, imageUrl, description, det
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="inline-flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-primary/20 text-primary-foreground mb-3 sm:mb-4 backdrop-blur-md border border-primary/30">
-                            <Icon className="h-6 w-6 sm:h-8 sm:w-8" />
+                        <div className="inline-flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-2xl bg-amber-400/20 text-amber-400 mb-3 sm:mb-4 backdrop-blur-md border border-amber-400/30">
+                            <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
                         </div>
                         <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold font-heading text-white mb-2 sm:mb-3 tracking-tight text-balance">
                             {title}
                         </h1>
-                        <div className="h-1 w-16 bg-primary mx-auto rounded-full" />
+                        <div className="h-1 w-16 bg-amber-400 mx-auto rounded-full" />
                     </motion.div>
                 </div>
             </div>
