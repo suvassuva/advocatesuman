@@ -13,12 +13,12 @@
   <!-- Background container with rounded corners -->
   <rect x="1" y="1" width="46" height="46" rx="10" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
 
-  <!-- Golden Scales of Justice Icon -->
-  <g transform="translate(8, 8) scale(1.33)" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Scales of Justice Icon in Pure White -->
+  <g transform="translate(8, 8) scale(1.33)" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <!-- Left pan -->
-    <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" fill="#fbbf24" fill-opacity="0.15"/>
+    <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" fill="#ffffff" fill-opacity="0.2"/>
     <!-- Right pan -->
-    <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" fill="#fbbf24" fill-opacity="0.15"/>
+    <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" fill="#ffffff" fill-opacity="0.2"/>
     <!-- Base -->
     <path d="M7 21h10"/>
     <!-- Central post -->

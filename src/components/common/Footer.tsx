@@ -19,7 +19,7 @@ export function Footer() {
                     {/* Brand */}
                     <div className="space-y-4">
                         <div className="flex items-center gap-2 text-white">
-                            <Scale className="h-6 w-6 sm:h-7 sm:w-7 text-amber-400" />
+                            <Scale className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
                             <span className="font-heading text-lg sm:text-xl font-bold">Suman & Co.</span>
                         </div>
                         <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
@@ -50,9 +50,6 @@ export function Footer() {
                             >
                                 <Download className="h-3.5 w-3.5" />
                                 <span>Install Web App</span>
-                                <span className="text-[9px] bg-amber-500/20 text-amber-300 px-1 py-0.2 rounded font-bold uppercase">
-                                    PWA
-                                </span>
                             </button>
                         </div>
                     </div>
@@ -66,19 +63,6 @@ export function Footer() {
                             <li><Link href="/practice-areas" className="hover:text-white transition-colors">Practice Areas</Link></li>
                             <li><Link href="/blog" className="hover:text-white transition-colors">Blog & Updates</Link></li>
                             <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
-                            <li>
-                                <button
-                                    onClick={() => {
-                                        if (typeof window !== "undefined") {
-                                            window.dispatchEvent(new CustomEvent("open-pwa-install"));
-                                        }
-                                    }}
-                                    className="flex items-center gap-1.5 text-amber-400 hover:text-amber-300 transition-colors font-medium text-left"
-                                >
-                                    <Download className="h-3 w-3" />
-                                    <span>Install App (PWA)</span>
-                                </button>
-                            </li>
                         </ul>
                     </div>
 
