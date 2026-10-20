@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function CriminalDefensePage() {
     return (
-        <main className="pt-20">
+        <main className="pt-14 sm:pt-20">
             <PracticeAreaDetail
                 title="Best Criminal Lawyers in Bangalore - Criminal Defense Lawyer"
                 iconName="ShieldAlert"

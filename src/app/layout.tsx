@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
@@ -6,6 +6,12 @@ import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair-display" });
+
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+};
 
 export const metadata: Metadata = {
     title: {
@@ -50,11 +56,26 @@ export const metadata: Metadata = {
         },
     },
     metadataBase: new URL("https://advocatesuman.in"),
+    manifest: "/manifest.webmanifest",
+    appleWebApp: {
+        capable: true,
+        statusBarStyle: "black-translucent",
+        title: "Suman & Co.",
+    },
+    icons: {
+        icon: [
+            { url: "/icon.svg", type: "image/svg+xml" },
+        ],
+        shortcut: "/icon.svg",
+        apple: "/icon.svg",
+    },
 };
 
 import { Navbar } from "@/components/common/Navbar";
 import { Footer } from "@/components/common/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
+import { MobileBottomNav } from "@/components/common/MobileBottomNav";
+import { PWAInstallPrompt } from "@/components/common/PWAInstallPrompt";
 import { JsonLd } from "@/components/common/JsonLd";
 import { CONTACT_DETAILS } from "@/lib/constants";
 import { ClientLayoutWrapper } from "@/components/common/ClientLayoutWrapper";
@@ -108,14 +129,18 @@ export default function RootLayout({
     };
 
     return (
-        <html lang="en">
-            <body className={cn(inter.variable, playfair.variable, "font-sans antialiased")}>
+        <html lang="en" className="overflow-x-hidden">
+            <body className={cn(inter.variable, playfair.variable, "font-sans antialiased overflow-x-hidden w-full relative min-h-screen")}>
                 <JsonLd data={legalServiceSchema} />
                 <ClientLayoutWrapper>
                     <Navbar />
-                    {children}
+                    <PWAInstallPrompt />
+                    <div className="pb-16 md:pb-0 min-w-0 w-full overflow-x-hidden">
+                        {children}
+                    </div>
                     <Footer />
                     <FloatingWhatsApp />
+                    <MobileBottomNav />
                 </ClientLayoutWrapper>
 
                 {/* ✅ Google Analytics START */}

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function LegalDocumentationPage() {
     return (
-        <main className="pt-20">
+        <main className="pt-14 sm:pt-20">
             <PracticeAreaDetail
                 title="Legal Documentation Services in Bangalore - Advocate Suman"
                 iconName="FileText" // Kept original iconName as it was not explicitly removed

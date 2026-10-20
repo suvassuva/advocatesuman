@@ -11,8 +11,8 @@ export function SplashScreen({ onComplete }: { onComplete: () => void }) {
         const timer = setTimeout(() => {
             setIsVisible(false);
             // Give a bit of time for the exit animation before calling onComplete
-            setTimeout(onComplete, 1000);
-        }, 2500);
+            setTimeout(onComplete, 800);
+        }, 2000);
 
         return () => clearTimeout(timer);
     }, [onComplete]);
@@ -24,52 +24,51 @@ export function SplashScreen({ onComplete }: { onComplete: () => void }) {
                     initial={{ opacity: 1 }}
                     exit={{ 
                         opacity: 0,
-                        y: -100,
-                        transition: { duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] }
+                        y: -50,
+                        transition: { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }
                     }}
-                    className="fixed inset-0 z-[9999] flex items-center justify-center bg-slate-950 overflow-hidden"
+                    className="fixed inset-0 z-[9999] flex items-center justify-center bg-slate-950 overflow-hidden w-full max-w-full px-4"
                 >
                     {/* Background Decorative Elements */}
-                    <div className="absolute inset-0 z-0 opacity-20">
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px]" />
-                        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-[100px]" />
+                    <div className="absolute inset-0 z-0 opacity-20 pointer-events-none overflow-hidden">
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 sm:w-[400px] sm:h-[400px] bg-primary/20 rounded-full blur-[80px]" />
                     </div>
 
                     <div className="relative z-10 flex flex-col items-center">
                         <motion.div
-                            initial={{ scale: 0.8, opacity: 0 }}
+                            initial={{ scale: 0.85, opacity: 0 }}
                             animate={{ 
                                 scale: 1, 
                                 opacity: 1,
-                                transition: { duration: 1.2, ease: "easeOut" }
+                                transition: { duration: 0.8, ease: "easeOut" }
                             }}
-                            className="flex flex-col items-center gap-6"
+                            className="flex flex-col items-center gap-4 sm:gap-6"
                         >
                             {/* Logo Icon */}
                             <motion.div 
-                                initial={{ y: 20, opacity: 0 }}
+                                initial={{ y: 15, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
-                                transition={{ delay: 0.2, duration: 0.8 }}
-                                className="flex h-24 w-24 items-center justify-center rounded-2xl bg-primary text-white shadow-[0_0_50px_rgba(var(--primary),0.3)]"
+                                transition={{ delay: 0.15, duration: 0.6 }}
+                                className="flex h-16 w-16 sm:h-20 sm:w-20 items-center justify-center rounded-2xl bg-primary text-white shadow-lg"
                             >
-                                <Scale className="h-12 w-12" />
+                                <Scale className="h-8 w-8 sm:h-10 sm:w-10" />
                             </motion.div>
 
                             {/* Text Content */}
                             <div className="text-center">
                                 <motion.h1 
-                                    initial={{ y: 20, opacity: 0 }}
+                                    initial={{ y: 15, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
-                                    transition={{ delay: 0.4, duration: 0.8 }}
-                                    className="text-4xl md:text-5xl font-heading font-bold text-white mb-2 tracking-tight"
+                                    transition={{ delay: 0.3, duration: 0.6 }}
+                                    className="text-2xl sm:text-4xl font-heading font-bold text-white mb-1 tracking-tight"
                                 >
                                     Suman & Co.
                                 </motion.h1>
                                 <motion.p 
                                     initial={{ y: 10, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
-                                    transition={{ delay: 0.6, duration: 0.8 }}
-                                    className="text-sm md:text-base uppercase tracking-[0.3em] text-slate-400 font-medium"
+                                    transition={{ delay: 0.45, duration: 0.6 }}
+                                    className="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-slate-400 font-medium"
                                 >
                                     Advocates & Legal Consultants
                                 </motion.p>
@@ -79,8 +78,8 @@ export function SplashScreen({ onComplete }: { onComplete: () => void }) {
                             <motion.div 
                                 initial={{ width: 0 }}
                                 animate={{ width: "100%" }}
-                                transition={{ delay: 0.8, duration: 1.5, ease: "easeInOut" }}
-                                className="h-0.5 w-48 bg-primary rounded-full mt-8 shadow-[0_0_15px_rgba(var(--primary),0.5)]"
+                                transition={{ delay: 0.6, duration: 1.2, ease: "easeInOut" }}
+                                className="h-0.5 w-32 sm:w-44 bg-primary rounded-full mt-4 shadow-[0_0_15px_rgba(var(--primary),0.5)]"
                             />
                         </motion.div>
                     </div>

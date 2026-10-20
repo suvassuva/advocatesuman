@@ -15,8 +15,8 @@ export default function BlogListingPage() {
                 description="Expert analysis and practical guidance on the most relevant legal matters affecting individuals and businesses in Bengaluru."
             />
 
-            <section className="py-20">
-                <div className="container mx-auto px-4 md:px-6">
+            <section className="py-8 sm:py-16">
+                <div className="container mx-auto px-3.5 sm:px-6 max-w-6xl">
                     <BlogList />
                 </div>
             </section>

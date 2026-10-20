@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function CorporateLawPage() {
     return (
-        <main className="pt-20">
+        <main className="pt-14 sm:pt-20">
             <PracticeAreaDetail
                 title="Corporate Law Firms in Bangalore - Expert Corporate Legal Services"
                 iconName="Building2"

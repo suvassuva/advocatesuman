@@ -5,7 +5,7 @@ import { PremiumSlider } from "@/components/common/PremiumSlider";
 
 export function AboutHero() {
     return (
-        <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+        <section className="relative h-[50vh] min-h-[360px] sm:h-[65vh] sm:min-h-[500px] flex items-center justify-center overflow-hidden pt-12">
             {/* Cinematic Background Slider */}
             <div className="absolute inset-0 z-0">
                 <PremiumSlider
@@ -14,44 +14,33 @@ export function AboutHero() {
                         "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000",
                         "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2000"
                     ]}
-                    overlayClassName="bg-slate-900/80 backdrop-blur-[2px]"
+                    overlayClassName="bg-slate-950/85 backdrop-blur-[2px]"
                     interval={6500}
                 />
             </div>
 
             {/* Content */}
-            <div className="container relative z-10 mx-auto px-4 text-center">
+            <div className="container relative z-10 mx-auto px-4 text-center max-w-4xl">
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, ease: "easeOut" }}
+                    transition={{ duration: 0.8 }}
                 >
-                    <span className="inline-block text-primary font-bold tracking-[0.3em] uppercase text-sm mb-6 border-b-2 border-primary/30 pb-2">
+                    <span className="inline-block text-amber-400 font-bold tracking-[0.2em] uppercase text-[11px] sm:text-xs mb-3 bg-amber-400/15 px-3 py-1 rounded-full border border-amber-400/30">
                         Legally Bound. Result Oriented.
                     </span>
-                    <h1 className="text-5xl md:text-8xl font-bold font-heading text-white mb-8 tracking-tighter leading-none">
-                        About Advocate Suman - Highly Experienced Lawyer in Bangalore
+                    <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold font-heading text-white mb-3 sm:mb-6 tracking-tight text-balance">
+                        About Advocate Suman - Highly Experienced Lawyer
                     </h1>
-                    <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-300 leading-relaxed font-light">
+                    <div className="h-1 w-16 bg-amber-400 mx-auto rounded-full mb-3 sm:mb-5" />
+                    <p className="max-w-xl mx-auto text-xs sm:text-base text-slate-300 leading-relaxed font-light text-pretty">
                         Adv. Suman Suresh brings 5 years of dedicated legal expertise and an unwavering commitment to protecting your rights across Bengaluru.
                     </p>
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1, duration: 1.5 }}
-                    className="absolute bottom-10 left-1/2 -translate-x-1/2"
-                >
-                    <div className="flex flex-col items-center gap-2">
-                        <span className="text-[10px] uppercase tracking-[0.4em] text-slate-500">Scroll Down</span>
-                        <div className="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent" />
-                    </div>
                 </motion.div>
             </div>
 
             {/* Decorative Overlay */}
-            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent dark:from-slate-950" />
+            <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white to-transparent" />
         </section>
     );
 }

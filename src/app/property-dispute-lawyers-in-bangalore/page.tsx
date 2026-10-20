@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function PropertyDisputesPage() {
     return (
-        <main className="pt-20">
+        <main className="pt-14 sm:pt-20">
             <PracticeAreaDetail
                 title="Civil Lawyers in Bangalore - Expert Civil Litigation Lawyer"
                 iconName="Building2"

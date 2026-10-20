@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Phone, Mail, MessageSquare, MapPin, ArrowRight } from "lucide-react";
-
 import { CONTACT_DETAILS } from "@/lib/constants";
 
 const CONTACT_METHODS = [
@@ -11,9 +10,9 @@ const CONTACT_METHODS = [
         title: "Call Us",
         value: `${CONTACT_DETAILS.PHONE_PRIMARY}`,
         description: "Direct line for urgent inquiries",
-        action: "Primary Line",
+        action: "Call Now",
         link: `tel:${CONTACT_DETAILS.PHONE_PRIMARY_RAW}`,
-        color: "bg-blue-500"
+        color: "bg-blue-600"
     },
     {
         icon: MessageSquare,
@@ -22,7 +21,7 @@ const CONTACT_METHODS = [
         description: "Quick message for fast response",
         action: "Send Message",
         link: `https://wa.me/${CONTACT_DETAILS.WHATSAPP_NUMBER}`,
-        color: "bg-green-500"
+        color: "bg-[#25D366]"
     },
     {
         icon: Mail,
@@ -40,42 +39,38 @@ const CONTACT_METHODS = [
         description: "CMH Road, Indiranagar",
         action: "Get Directions",
         link: "https://maps.google.com/?q=CMH+Road+Indiranagar+Bengaluru",
-        color: "bg-slate-700"
+        color: "bg-slate-800"
     }
 ];
 
 export function ContactCards() {
     return (
-        <section className="py-20 bg-white">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <section className="py-8 sm:py-16 bg-white overflow-hidden">
+            <div className="container mx-auto px-3.5 sm:px-6 max-w-6xl">
+                <div className="grid gap-2.5 sm:gap-6 grid-cols-2 lg:grid-cols-4">
                     {CONTACT_METHODS.map((method, index) => (
                         <motion.a
                             key={method.title}
                             href={method.link}
                             target={method.link.startsWith("http") ? "_blank" : undefined}
                             rel={method.link.startsWith("http") ? "noopener noreferrer" : undefined}
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 15 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            whileHover={{ y: -10 }}
-                            className="group relative p-8 rounded-3xl bg-slate-50 border border-slate-100 transition-all duration-300 hover:shadow-2xl hover:bg-white hover:border-primary/20"
+                            transition={{ duration: 0.4, delay: index * 0.1 }}
+                            className="group relative p-3.5 sm:p-5 rounded-2xl bg-slate-50 border border-slate-100 transition-all duration-300 hover:shadow-lg hover:bg-white hover:border-primary/20"
                         >
-                            <div className={`mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl ${method.color} text-white shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3`}>
-                                <method.icon className="h-7 w-7" />
+                            <div className={`mb-3 inline-flex h-9 w-9 sm:h-11 sm:w-11 items-center justify-center rounded-xl ${method.color} text-white shadow-sm transition-transform duration-300 group-hover:scale-105`}>
+                                <method.icon className="h-4 w-4 sm:h-5 sm:w-5" />
                             </div>
 
-                            <h3 className="text-xl font-bold text-slate-900 mb-2">{method.title}</h3>
-                            <p className="font-semibold text-primary mb-1">{method.value}</p>
-                            <p className="text-sm text-slate-500 mb-6">{method.description}</p>
+                            <h3 className="text-xs sm:text-base font-bold text-slate-900 mb-0.5">{method.title}</h3>
+                            <p className="font-semibold text-primary text-[11px] sm:text-sm mb-1 truncate">{method.value}</p>
+                            <p className="text-[10px] sm:text-xs text-slate-500 mb-3 line-clamp-1">{method.description}</p>
 
-                            <div className="flex items-center text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-primary transition-colors">
-                                {method.action} <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1" />
+                            <div className="flex items-center text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-400 group-hover:text-primary transition-colors">
+                                {method.action} <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-0.5" />
                             </div>
-
-                            {/* Decorative background element */}
-                            <div className="absolute -right-4 -bottom-4 h-24 w-24 bg-slate-200/20 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors duration-500" />
                         </motion.a>
                     ))}
                 </div>

@@ -20,9 +20,9 @@ const CTAButton = forwardRef<HTMLButtonElement, CTAButtonProps>(
                         "bg-secondary text-secondary-foreground hover:bg-secondary/80": variant === "secondary",
                         "border border-input bg-background hover:bg-accent hover:text-accent-foreground": variant === "outline",
                         "hover:bg-accent hover:text-accent-foreground": variant === "ghost",
-                        "h-9 px-4 py-2 text-sm": size === "sm",
-                        "h-10 px-6 py-2": size === "md",
-                        "h-12 px-8 text-lg": size === "lg",
+                        "h-8 sm:h-9 px-3 sm:px-4 py-1.5 text-xs sm:text-sm rounded-lg": size === "sm",
+                        "h-10 px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold rounded-xl": size === "md",
+                        "h-11 sm:h-12 px-5 sm:px-8 text-sm sm:text-base font-bold rounded-xl shadow-md active:scale-95 transition-all": size === "lg",
                     },
                     className
                 )}

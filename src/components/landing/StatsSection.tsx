@@ -46,22 +46,22 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
 
 export function StatsSection() {
     return (
-        <section className="py-16 bg-slate-900 border-y border-white/5">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center">
+        <section className="py-8 sm:py-14 bg-slate-900 border-y border-white/10">
+            <div className="container mx-auto px-3 sm:px-6 max-w-6xl">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6 md:gap-10 text-center">
                     {STATS.map((stat, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 15 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
-                            className="space-y-2"
+                            className="bg-white/5 border border-white/5 rounded-2xl p-3 sm:p-5 flex flex-col justify-center items-center text-center space-y-1 backdrop-blur-sm min-h-[85px] sm:min-h-[110px]"
                         >
-                            <div className="text-4xl md:text-5xl font-bold text-primary-foreground font-heading">
+                            <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-white font-heading tracking-tight">
                                 <Counter value={stat.value} suffix={stat.suffix} />
                             </div>
-                            <div className="text-sm md:text-base font-medium text-slate-400 uppercase tracking-widest">
+                            <div className="text-[10px] sm:text-xs md:text-sm font-medium text-slate-400 uppercase tracking-wider text-balance">
                                 {stat.label}
                             </div>
                         </motion.div>

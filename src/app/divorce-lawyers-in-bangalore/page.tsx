@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function FamilyLawPage() {
     return (
-        <main className="pt-20">
+        <main className="pt-14 sm:pt-20">
             <PracticeAreaDetail
                 title="Best Divorce Lawyers in Bangalore - Experienced Divorce Lawyer"
                 iconName="Users"

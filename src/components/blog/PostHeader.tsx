@@ -13,41 +13,34 @@ interface PostHeaderProps {
 
 export function PostHeader({ post }: PostHeaderProps) {
     return (
-        <section className="relative pt-32 pb-16 bg-slate-900 border-b border-slate-800 overflow-hidden">
-            {/* Background Decorations */}
-            <div className="absolute inset-0 z-0 opacity-10">
-                <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary rounded-full blur-[120px]" />
-                <div className="absolute top-1/2 -right-24 w-64 h-64 bg-primary/20 rounded-full blur-[100px]" />
-            </div>
-
-            <div className="container relative z-10 mx-auto px-4">
+        <section className="relative pt-20 sm:pt-28 pb-8 sm:pb-14 bg-slate-900 border-b border-slate-800 overflow-hidden">
+            <div className="container relative z-10 mx-auto px-4 max-w-4xl">
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="max-w-4xl mx-auto"
                 >
                     <Link
                         href="/blog"
-                        className="inline-flex items-center gap-2 text-primary text-sm font-bold uppercase tracking-widest mb-8 hover:opacity-80 transition-opacity"
+                        className="inline-flex items-center gap-1.5 text-amber-400 text-xs font-bold uppercase tracking-wider mb-4 hover:opacity-80 transition-opacity"
                     >
-                        <ArrowLeft size={16} />
+                        <ArrowLeft size={14} />
                         Back to Insights
                     </Link>
 
-                    <div className="mb-6">
-                        <span className="bg-primary/20 text-primary border border-primary/30 text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-1.5 rounded-full">
+                    <div className="mb-3">
+                        <span className="bg-amber-400/15 text-amber-400 border border-amber-400/30 text-[9px] sm:text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">
                             {post.category}
                         </span>
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl font-bold font-heading text-white mb-8 leading-tight">
+                    <h1 className="text-xl sm:text-3xl md:text-5xl font-bold font-heading text-white mb-4 leading-tight tracking-tight text-balance">
                         {post.title}
                     </h1>
 
-                    <div className="flex flex-wrap items-center gap-6 text-sm text-slate-400 font-medium border-t border-slate-800 pt-8">
-                        <div className="flex items-center gap-3">
-                            <div className="relative h-10 w-10 rounded-full overflow-hidden border-2 border-primary/20 bg-slate-800">
+                    <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400 font-medium border-t border-slate-800/80 pt-4">
+                        <div className="flex items-center gap-2">
+                            <div className="relative h-7 w-7 rounded-full overflow-hidden border border-primary/20 bg-slate-800 shrink-0">
                                 <Image
                                     src="/images/advocate.png"
                                     alt={post.author}
@@ -55,14 +48,14 @@ export function PostHeader({ post }: PostHeaderProps) {
                                     className="object-cover"
                                 />
                             </div>
-                            <span>{post.author}</span>
+                            <span className="text-slate-200">{post.author}</span>
                         </div>
-                        <div className="flex items-center gap-2">
-                            <Calendar size={16} className="text-primary" />
-                            {format(new Date(post.date), "MMMM dd, yyyy")}
+                        <div className="flex items-center gap-1.5">
+                            <Calendar size={13} className="text-primary" />
+                            {format(new Date(post.date), "MMM dd, yyyy")}
                         </div>
-                        <div className="flex items-center gap-2">
-                            <Clock size={16} className="text-primary" />
+                        <div className="flex items-center gap-1.5">
+                            <Clock size={13} className="text-primary" />
                             5 min read
                         </div>
                     </div>
